@@ -95,7 +95,6 @@ const CommentBox = ({ options }) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log('inputElement', inputElement.current.value);
     setComment({ comment: inputElement.current.value, posX: options.x, posY: options.y });
     // useLocalStorage('comment', { open: false, x: 0, y: 0 })
   };
